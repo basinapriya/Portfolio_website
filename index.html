@@ -2,6 +2,17 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
+  <!-- device width scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font Style -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- add normalize below -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- add your style.css file below that's in the css directory -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- adding favicon -->
   <link href="./img/favicon.ico" rel="shortcut icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -9,7 +20,6 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta charset="utf-8">
   <title>I'm a UI/UX Designer based in raleigh Northcarolina </title>
 </head>
 
@@ -35,9 +45,9 @@
       </svg>
       <nav>
         <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="menu-link" href="index.html">Work</a></li>
+          <li><a class="menu-link" href="about.html">About</a></li>
+          <li><a class="menu-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -46,11 +56,9 @@
     <!-- For the hero section -->
     <div>
       <div>
-        <h1>
-          Hello <br> I'm a UX researcher and designer from Raleigh, NC
-        </h1>
+        <h1 id="Hero">Hello <br> I'm a UX researcher and designer from Raleigh, NC</h1>
         <p>
-          I'm Priya. I relentlessly push and pull to create aesthetically pleasing UI <br>and
+          I'm Priya. I relentlessly push and pull to create aesthetically pleasing UI and
           build satisfying user-centric products.
         </P>
       </div>
@@ -59,11 +67,8 @@
     <!-- For your work/projects -->
     <div>
       <div>
-        <h2>
-          My work
-        </h2>
+        <h2 id="projects">My work</h2>
       </div>
-
       <div>
         <!-- open row that holds (2) columns for project 1 -->
         <div>
@@ -83,7 +88,7 @@
             platform to people for earning by offering lodging and
             hospitality.
           </p><!-- end paragraph -->
-          <a href="triphome.html">take a look</a><!-- button or link label -->
+          <a href="#triphome.html" class="button">TAKE A LOOK!</a><!-- button or link label -->
         </div><!-- end second column -->
       </div><!-- end row that holds (2) columns for project -->
     </div>
@@ -105,7 +110,7 @@
           with your financial accounts, track spending, and categorize
           expenses so you can see where your money is going.
         </p><!-- end paragraph -->
-        <a href="">Take a look</a><!-- button or link label -->
+        <a href="#cashtrac.html" class="button">TAKE A LOOK!</a><!-- button or link label -->
       </div><!-- end second column -->
     </div><!-- end row that holds (2) columns for project 2 -->
     <div>
@@ -126,7 +131,7 @@
           to water your plants—a Native app for both iOS and Android
           devices.
         </p><!-- end paragraph -->
-        <a href="">Take a look</a><!-- button or link label -->
+        <a href="#Gro.html" class="button">TAKE A LOOK!</a><!-- button or link label -->
       </div><!-- end second column -->
     </div><!-- end row that holds (2) columns for project 3 -->
 
@@ -136,7 +141,7 @@
     <div>
       <h2>Get in Touch</h2>
       <div>
-        <a href="priyabasina.designatgmail.com">Email me</a>
+        <a href="priyabasina.design@gmail.com" class="button contact">Email me</a>
       </div>
       <div>
         <!--Social Media Layout and Placeholders-->
