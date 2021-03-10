@@ -3,6 +3,41 @@ Colors used:
 primarily Color (Grey) : #453E3E;
 Secondary Color (Blue):  #F7B708;
 */
+header {
+  text-align: center;
+  background-color: #ffe4c4;
+  padding: 10px;
+  margin: 10px 0;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  max-width: 100;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited{
+  color: #453E3E;
+}
+nav > ul > li > a:hover,a:focus{
+  color: #F7B708;
+  text-decoration: underline;
+}
+nav > ul > li > a:active{
+    color: #0828f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'lato', sans-serif;
 }
@@ -52,9 +87,8 @@ a {
   text-decoration: none;
   /* No underlining */
 }
-
+/*
 a:visited {
-  /* visited link */
   color: #453E3E;
 }
 
@@ -65,32 +99,67 @@ a:focus {
 }
 
 a:active {
-  /* selected link */
   color: #0828f7;
 }
-
+*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: transparent;
-  color: #453E3E; /* needed to override the default link color */
+  color: #453E3E;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid #453E3E; /* width of the border, type, color */
+  border: 2px solid #453E3E;
+  /* width of the border, type, color */
   /*transition: 0.2s opacity;*/
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact, .button.cv {
   background-color: transparent;
   color: #453E3E;
   text-transform: uppercase;
-  border: 2px solid  #453E3E;
+  border: 2px solid #453E3E;
 }
+
 .button.contact:hover, .button.cv:hover {
   background-color: transparent;
   color: #F7B708;
   border: 2px solid #F7B708;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+.logo {
+  max-width: 250px;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
