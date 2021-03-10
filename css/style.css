@@ -3,35 +3,46 @@ Colors used:
 primarily Color (Grey) : #453E3E;
 Secondary Color (Blue):  #F7B708;
 */
+
 header {
+  position: fixed;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   text-align: center;
   background-color: #ffe4c4;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
   max-width: 100;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
-nav > ul > li > a:visited{
+
+nav>ul>li>a:visited {
   color: #453E3E;
 }
-nav > ul > li > a:hover,a:focus{
+
+nav>ul>li>a:hover, a:focus {
   color: #F7B708;
   text-decoration: underline;
 }
-nav > ul > li > a:active{
-    color: #0828f7;
+
+nav>ul>li>a:active {
+  color: #0828f7;
 }
 
 * {
@@ -87,6 +98,7 @@ a {
   text-decoration: none;
   /* No underlining */
 }
+
 /*
 a:visited {
   color: #453E3E;
@@ -149,15 +161,18 @@ a:active {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
+
 #hero h1 {
-  text-align: center; /* Centers text */
-  margin: 0;
-  padding: 0.67em 0;
+  text-align: center;
+  /* Centers text */
 }
+
 .logo {
   max-width: 250px;
 }
+
 #hero {
+  margin-top: 0;
   background-color: #ffe4c4;
   padding: 20px 0;
   display: inline-block;
