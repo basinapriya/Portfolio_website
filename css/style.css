@@ -3,7 +3,6 @@ Colors used:
 primarily Color (Grey) : #453E3E;
 Secondary Color (Blue):  #F7B708;
 */
-<head>
 body {
   font-family: 'lato', sans-serif;
 }
@@ -95,4 +94,3 @@ a:active {
   color: #F7B708;
   border: 2px solid #F7B708;
 }
-</head>
