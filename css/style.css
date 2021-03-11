@@ -1,18 +1,17 @@
 /*
 Colors used:
-primarily Color (Grey) : #453E3E;
-Secondary Color (Blue):  #F7B708;
+primarily Color (orange) : #ffe4c4;
+Secondary Color (yellow):  #F7B708;
 */
 header {
   position: fixed;
-  max-width: 100;
+  width: 100%;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   text-align: center;
   background-color: #ffe4c4;
   padding: 10px;
-  margin: 10px 0 0;
 }
 
 nav>ul {
@@ -42,7 +41,7 @@ nav>ul>li>a:hover, a:focus {
 }
 
 nav>ul>li>a:active {
-  color: #0828f7;
+  color: #453E3E;
 }
 
 * {
@@ -112,8 +111,8 @@ a:focus {
 
 a:active {
   color: #0828f7;
-}
-*/
+}*/
+
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -129,7 +128,8 @@ a:active {
 }
 
 .button:hover {
-  opacity: 0.8;
+  /*opacity: 0.8;*/
+  color: #F7B708;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -162,19 +162,31 @@ a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#hero h1 {
-  text-align: center;
-  /* Centers text */
-}
-
 .logo {
   max-width: 250px;
 }
 
 #hero {
-  margin-top: 0;
   background-color: #ffe4c4;
-  padding: 20px 0;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
+}
+
+main {
+  padding-top: 240px;
+}
+
+#work h2, #hero h1, #hero p {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #ffe4c4;
+  padding: 10px;
+}
+
+#about h1, #story h2, #skills h2 {
+  text-align: center;
 }
