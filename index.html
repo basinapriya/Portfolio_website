@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">-->
   <script src="https://kit.fontawesome.com/36d620b82c.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <!-- device width scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- font Style -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
   <!-- add normalize below -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <!-- add your style.css file below that's in the css directory -->
@@ -69,11 +69,13 @@
     <!-- For the hero section -->
     <div id="hero">
       <div class="container">
-        <h1>Hello! My name is Priya basina.<span></span>I'm a UX researcher and designer from Raleigh, NC</h1>
-        <p>
-          I relentlessly push and pull to create aesthetically pleasing UI and
-          build satisfying user-centric products.
-        </P>
+        <div id="herotext">
+          <h1>Hello! My name is Priya basina.<span></span>I'm a UX researcher and designer from Raleigh, NC</h1>
+          <p>
+            I relentlessly push and pull to create aesthetically pleasing UI and
+            build satisfying user-centric products.
+          </P>
+        </div>
       </div>
     </div>
 
@@ -81,7 +83,7 @@
 
     <div id="work">
       <div class="container">
-        <h2>My work</h2>
+        <h3>Explore Projects</h3>
         <div class="row">
           <!-- open row that holds (2) columns for project 1 -->
           <div class="column col-md-6 col-lg-7">
@@ -106,14 +108,18 @@
         </div><!-- end row that holds (2) columns for project 1 -->
         <div class="row">
           <!-- open row that holds (2) columns for project 2 -->
-          <div class="column col-md-6 col-lg-7">
-            <!-- open first column (used for image) -->
-            <picture>
-              <source srcset="img/cashtrac/coverimage_2x.jpg" media="(max-width:767px)">
-              <img src="img/cashtrac/coverimage_2x.jpg" alt="My Image">
-            </picture>
-          </div><!-- end first column -->
+          <div class="reverseimg">
+            <div class="column col-md-6 col-lg-7">
+              <!-- open first column (used for image) -->
+
+              <picture>
+                <source srcset="img/cashtrac/coverimage_2x.jpg" media="(max-width:767px)">
+                <img src="img/cashtrac/coverimage_2x.jpg" alt="My Image">
+              </picture>
+            </div><!-- end first column -->
+          </div>
           <div class="column col-md-6 col-lg-5">
+
             <!-- open second column (used for text) -->
             <h3>Cash Trac</h3><!-- heading for the project -->
             <p>
@@ -1116,7 +1122,7 @@
 
       <div class="container">
         <div id="footertext">
-          <h2>Get in Touch</h2>
+          <h2>Let's Work Together</h2>
           <div class="row">
             <a href="priyabasina.design@gmail.com" class="button contact">Email me</a>
           </div>
@@ -1132,7 +1138,7 @@
     </div>
     <div>
       <div id="footerp">
-        <p>Copyright Priya basina 2020</p>
+        <p>Copyright Priya basina 2021</p>
       </div>
     </div>
   </footer>
