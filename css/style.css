@@ -114,6 +114,7 @@ h4 {
 
 img {
   width: 100%;
+  border-radius: 1%
 }
 
 .self-img img{
@@ -122,9 +123,18 @@ img {
   margin-right: auto;
   width:40%;
   padding-top: 50px;
+  float: left;
 }
 .project-scr img{
-  width:20%;
+  padding-top: 50px;
+  width:35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  padding-top: 50px;
+  float: left;
+  border-radius: 1%
 }
 
 a {
@@ -155,7 +165,7 @@ a:active {
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: none;
+  border-radius: 5px;
   border: 2px solid #453E3E;
   transition: 0.2s all;
   /* width of the border, type, color */
@@ -167,7 +177,7 @@ a:active {
   color: #F7B708;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  opacity: 0.8;
+  opacity: none;
 }
 
 .button.contact, .button.cv {
@@ -192,7 +202,15 @@ a:active {
 .container {
   padding: 0 15px;
 }
-
+.contentwrapper {
+  padding-top: 50px;
+  padding-bottom:70px;
+  padding-left: 30px;
+  padding-right:30px;
+  max-width: 1200px;
+  margin-left:auto;
+  margin-right:auto;
+}
 .row {
   margin: 25px 0;
   /* 25px top and
@@ -234,8 +252,11 @@ main {
   padding-top: 100px;
 }
 
-#work h2, #hero h1, #hero p {
+ #hero h1, #hero p {
   text-align: center;
+}
+#work h3{
+  text-align: left;
 }
 
 footer {
@@ -274,8 +295,8 @@ font-size: 2em;
   border: 2px solid #F7B708;
 }
 */
-#about h1, #story h2, #skills h2 {
-  text-align: center;
+ #story h2 {
+  text-align: left;
 }
 
 /* ==============================
@@ -371,6 +392,25 @@ nav {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdrown-content{
+  display none;
+  position: absolute;
+  list-style-type: none;
+  padding:0 20px;
+  text-align: left;
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: #;
+  color: #F7B708;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 }
 /* ==============================
