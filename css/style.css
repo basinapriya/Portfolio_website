@@ -3,22 +3,25 @@ Colors used:
 primarily Color (orange) : #ffe4c4;
 Secondary Color (yellow):  #F7B708;
 */
-
 header {
   position: fixed;
-  width: 100%;/*
+  width: 100%;
+  /*
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);*/
   background-color: #ffffff;
   padding: 20px 0 4px;
 }
-.navtoggle li:not(:last-child) {
+
+.navtoggle li:not(:last-child), .dropdown-content {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -26,19 +29,22 @@ header {
   font-size: 20px;
   padding-right: 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -49,6 +55,7 @@ nav>ul>li>a {
   color: #4a4a4a;
   transition: 0.2s all;
 }
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -109,7 +116,7 @@ h3 {
 
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 img {
@@ -117,22 +124,27 @@ img {
   border-radius: 5px;
 }
 
-.self-img img{
+.self-img img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:40%;
+  width: 40%;
   padding-top: 40px;
   float: left;
 }
-.project-scr img{
-  width:35%;
+
+.project-scr img {
+  width: 40%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:40%;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   float: left;
+  text-align: center;
+}
+
+#work h4 {
+  padding-left: 20px;
 }
 
 a {
@@ -158,11 +170,13 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color:transparent;
+  background-color: transparent;
   color: #453E3E;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 5px;
   border: 2px solid #453E3E;
   transition: 0.2s all;
@@ -171,11 +185,9 @@ a:active {
 }
 
 .button:hover {
-  /*opacity: 0.8;*/
   color: #F7B708;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  opacity: none;
 }
 
 .button.contact, .button.cv {
@@ -184,7 +196,8 @@ a:active {
   text-transform: uppercase;
   border: 2px solid #ffffff;
 }
- .button.cv {
+
+.button.cv {
   color: #453E3E;
   border: 2px solid #453E3E
 }
@@ -195,19 +208,19 @@ a:active {
   border: 2px solid #F7B708;
 }
 
-
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .contentwrapper {
   padding-top: 50px;
-  padding-bottom:70px;
+  padding-bottom: 70px;
   padding-left: 30px;
-  padding-right:30px;
+  padding-right: 30px;
   max-width: 1200px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -217,32 +230,36 @@ a:active {
 }
 
 #work .row {
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #d6d9de;
 }
 
 .logo {
   max-width: 250px;
 }
-.logo-size svg{
+
+.logo-size svg {
   width: 70px;
-  height:auto;
+  height: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 #hero {
   text-align: center;
-  background-color: #333333;
-  padding: 40px;
-/*  background-color: #ffffff;
+  background-color: #000000;
+  padding: 80px;
+  /*  background-color: #ffffff;
   padding: 10px 0;
   display: inline-block;
   width: 100%;*/
 }
-#herotext h1 , #herotext p{
-color: #ffffff;
+
+#herotext h1, #herotext p {
+  color: #ffffff;
 }
+
 #hero span {
   display: block;
 }
@@ -251,30 +268,34 @@ main {
   padding-top: 100px;
 }
 
- #hero h1, #hero p {
+#hero h1, #hero p {
   text-align: center;
 }
-#work h3{
+
+#work h3 {
   text-align: left;
 }
 
 footer {
   text-align: center;
-  background-color: #333333;
+  background-color: #000000;
   padding: 10px;
 }
-#footertext h2 {
-color: #ffffff ;
-font-size: 2em;
 
+#footertext h2 {
+  color: #ffffff;
+  font-size: 2em;
 }
-#footerp p{
-    padding: 10px;
+
+#footerp p {
+  padding: 10px;
   color: #ffffff;
 }
-.social{
+
+.social {
   text-align: center;
 }
+
 .Social a {
   font-size: 2em;
   display: inline-block;
@@ -294,7 +315,7 @@ font-size: 2em;
   border: 2px solid #F7B708;
 }
 */
- #story h2 {
+#story h2 {
   text-align: left;
 }
 
@@ -303,191 +324,324 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   nav>ul>li {
     display: inline-block;
     max-width: 100%;
   }
+
   nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
   }
+
   .navtoggle.responsive nav {
     padding: 0 0 0;
   }
-  .navtoggle.responsive li  {
+
+  .navtoggle.responsive li {
     padding: 0;
     border-top: none;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
 }
-.navtoggle li:last-child {
-  display: none;
-}
-  .col-md-1 {width: 8.33%;}
-  .col-md-2 {width: 16.66%;}
-  .col-md-3 {width: 25%;}
-  .col-md-4 {width: 33.33%;}
-  .col-md-5 {width: 41.66%;}
-  .col-md-6 {width: 50%;}
-  .col-md-7 {width: 58.33%;}
-  .col-md-8 {width: 66.66%;}
-  .col-md-9 {width: 75%;}
-  .col-md-10 {width: 83.33%;}
-  .col-md-11 {width: 91.66%;}
-  .col-md-12 {width: 100%;}
-}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   nav>ul>li {
     display: inline-block;
     max-width: 100%;
   }
+
   nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-  .col-lg-1 {width: 8.33%;}
-  .col-lg-2 {width: 16.66%;}
-  .col-lg-3 {width: 25%;}
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-6 {width: 50%;}
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-8 {width: 66.66%;}
-  .col-lg-9 {width: 75%;}
-  .col-lg-10 {width: 83.33%;}
-  .col-lg-11 {width: 91.66%;}
-  .col-lg-12 {width: 100%;}
+    display: inline-block;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 3;
+    list-style-type: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #F7B708;
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+    min-width: 250px;
+  }
+
+  .dropdown-content li {
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    padding-top: 5px;
+    padding-left: 15px;
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-content a:hover {
+    background: #ffffff;
+    color: #F7B708;
+  }
+
+  .dropdown-content li:last-child {
+    display: inline-block !important;
+    padding-bottom: 16px !important;
+  }
+
+  .dropdown-content li:first-child {
+    padding-top: 20px;
+  }
+
+  li.parent {
+    position: relative;
+  }
+
+  li.parent:hover .dropdown-content {
+    display: block;
+  }
 }
 
-.dropdown-content{
-  display: none;
-  position: absolute;
-  top: 25px;
-  left:0;
-  z-index:3;
-  list-style-type:none;
-  text-align: left;
-  font-size: 15px;
-  font-weight: 400;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: #F7B708;
-  padding-left:0;
-  margin-left:0;
-  overflow: hidden;
-  min-width: 250px;
-}
-.dropdown-content li{
-  display:block;
-  width:100%;
-}
-.dropdown-content a{
-  padding-top:5px;
-  padding-left: 15px;
-  display:block;
-  width:100%;
-}
-
-.dropdown-content a:hover{
-  background: #ffffff;
-  color:#F7B708;
-}
-.dropdown-content li:last-child{
-  display: inline-block !important;
-  padding-bottom:16px !important;
-}
-.dropdown-content li:first-child{
-  padding-top:20px;
-}
-
-li.parent{
-  position: relative;
-}
-li.parent:hover .dropdown-content{
-  display: block;
-}
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   nav>ul>li {
     display: inline-block;
     max-width: 100%;
   }
+
   nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
   }
-  .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-.col-xl-1 {width: 8.33%;}
-.col-xl-2 {width: 16.66%;}
-.col-xl-3 {width: 25%;}
-.col-xl-4 {width: 33.33%;}
-.col-xl-5 {width: 41.66%;}
-.col-xl-6 {width: 50%;}
-.col-xl-7 {width: 58.33%;}
-.col-xl-8 {width: 66.66%;}
-.col-xl-9 {width: 75%;}
-.col-xl-10 {width: 83.33%;}
-.col-xl-11 {width: 91.66%;}
-.col-xl-12 {width: 100%;}
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-xl-1 {
+    width: 8.33%;
+  }
+
+  .col-xl-2 {
+    width: 16.66%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.33%;
+  }
+
+  .col-xl-5 {
+    width: 41.66%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.33%;
+  }
+
+  .col-xl-8 {
+    width: 66.66%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.33%;
+  }
+
+  .col-xl-11 {
+    width: 91.66%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-}
+
 #skills h3 {
   margin-top: 0;
 }
@@ -497,7 +651,8 @@ nav {
   padding-right: 20px;
   float: left;
 }
-.reverseimg  [class*="col-"] {
+
+.reverseimg [class*="col-"] {
   padding-left: 20px;
   padding-right: 20px;
   float: right;
@@ -510,10 +665,19 @@ nav {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -521,10 +685,17 @@ nav {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -532,80 +703,97 @@ nav {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 /* short form for above .cloud-front
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }*/
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /* social icon transitions*/
 ul.social-network {
-	list-style: none;
-	display: inline;
-	margin-left:0 !important;
-	padding: 0;
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
 }
+
 ul.social-network li {
-	display: inline;
-	margin: 0 5px;
+  display: inline;
+  margin: 0 5px;
 }
+
 .social-network a.icogithub:hover {
-	background-color: #F7B708;
+  background-color: #F7B708;
 }
+
 .social-network a.icobehance:hover {
-	background-color: #F7B708;
+  background-color: #F7B708;
 }
+
 .social-network a.icoLinkedin:hover {
-	background-color:#F7B708;
+  background-color: #F7B708;
 }
-.social-network a.icobehance:hover i,.social-network a.icogithub:hover i, .social-network a.icoLinkedin:hover i {
-	color:#fff;
+
+.social-network a.icobehance:hover i, .social-network a.icogithub:hover i, .social-network a.icoLinkedin:hover i {
+  color: #fff;
 }
+
 a.socialIcon:hover, .socialHoverClass {
-	color:#F7B708;
+  color: #F7B708;
 }
 
 .social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 50px;
-	height: 50px;
-	font-size:20px;
-	background-color: #D3D3D3;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #D3D3D3;
 }
+
 .social-circle li i {
-	margin:0;
-	line-height:50px;
-	text-align: center;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
 }
 
 .social-circle li a:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
+
 .social-circle i {
-	color: #fff;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
 }
+
 /* end social icon transitions*/
