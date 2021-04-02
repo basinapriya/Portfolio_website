@@ -41,7 +41,7 @@ header {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid #d6d9de;
 }
 
 .navtoggle.responsive li:last-child {
@@ -128,13 +128,13 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  padding-top: 40px;
+  width: 100%;
+  padding: 40px 15px 10px 15px;
   float: left;
 }
 
 .project-scr img {
-  width: 40%;
+  width: 100%;
   display: block;
   padding-top: 20px;
   padding-left: 20px;
@@ -328,6 +328,25 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 40px;
+    float: left;
+  }
+
+  .project-scr img {
+    width: 40%;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -418,6 +437,25 @@ Large devices (1024px or larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 40px;
+    float: left;
+  }
+
+  .project-scr img {
+    width: 40%;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
   }
 
   nav {
@@ -560,6 +598,25 @@ X-large devices (1440px or larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 40px;
+    float: left;
+  }
+
+  .project-scr img {
+    width: 40%;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
   }
 
   nav {
