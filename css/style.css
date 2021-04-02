@@ -249,7 +249,7 @@ a:active {
 #hero {
   text-align: center;
   background-color: #000000;
-  padding: 80px;
+  padding: 60px 10px 60px 10px;
   /*  background-color: #ffffff;
   padding: 10px 0;
   display: inline-block;
