@@ -347,6 +347,16 @@ Medium devices (640px and larger)
     text-align: center;
   }
 
+  #hero {
+    text-align: center;
+    background-color: #000000;
+    padding: 80px 20px 80px 20px;
+    /*  background-color: #ffffff;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;*/
+  }
+
   nav {
     width: auto;
     float: right;
@@ -456,6 +466,16 @@ Large devices (1024px or larger)
     padding-right: 20px;
     float: left;
     text-align: center;
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #000000;
+    padding: 80px;
+    /*  background-color: #ffffff;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;*/
   }
 
   nav {
@@ -617,6 +637,16 @@ X-large devices (1440px or larger)
     padding-right: 20px;
     float: left;
     text-align: center;
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #000000;
+    padding: 80px;
+    /*  background-color: #ffffff;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;*/
   }
 
   nav {
