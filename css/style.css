@@ -470,12 +470,17 @@ Large devices (1024px or larger)
     float: left;
     text-align: center;
   }
+  #hero {
+    text-align: center;
+    background-color: #000000;
+    padding: 60px 10px 60px 10px;
+  }
 
   #hero {
     text-align: center;
     background-color: #000000;
-    padding: 80px;
-    /*  background-color: #ffffff;
+      /*padding: 80px;
+   background-color: #ffffff;
     padding: 10px 0;
     display: inline-block;
     width: 100%;*/
@@ -645,11 +650,16 @@ X-large devices (1440px or larger)
   #hero {
     text-align: center;
     background-color: #000000;
-    padding: 80px;
-    /*  background-color: #ffffff;
+    /*padding: 80px;
+     background-color: #ffffff;
     padding: 10px 0;
     display: inline-block;
     width: 100%;*/
+  }
+  #hero {
+    text-align: center;
+    background-color: #000000;
+    padding: 60px 10px 60px 10px;
   }
 
   nav {
