@@ -350,11 +350,14 @@ Medium devices (640px and larger)
   #hero {
     text-align: center;
     background-color: #000000;
-    padding: 80px 20px 80px 20px;
-    /*  background-color: #ffffff;
+  /*  padding: 80px 20px 80px 20px;
+      background-color: #ffffff;
     padding: 10px 0;
     display: inline-block;
     width: 100%;*/
+  }
+  #work h3 {
+    margin:auto;
   }
 
   nav {
