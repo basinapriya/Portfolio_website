@@ -27,7 +27,7 @@ header {
   right: 0;
   top: 20px;
   font-size: 20px;
-  
+
 }
 
 .navtoggle.responsive li {
@@ -319,6 +319,7 @@ footer {
   text-align: left;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -358,6 +359,10 @@ Medium devices (640px and larger)
   }
   #work h3 {
     margin:auto;
+  }
+  #story h3{
+    padding-top:11px;
+    margin: auto;
   }
 
   nav {
@@ -484,6 +489,10 @@ Large devices (1024px or larger)
     padding: 10px 0;
     display: inline-block;
     width: 100%;*/
+  }
+  #story h3{
+    padding-top:11px;
+    margin: auto;
   }
 
   nav {
@@ -660,6 +669,10 @@ X-large devices (1440px or larger)
     text-align: center;
     background-color: #000000;
     padding: 60px 10px 60px 10px;
+  }
+  #story h3{
+    padding-top:11px;
+    margin: auto;
   }
 
   nav {
